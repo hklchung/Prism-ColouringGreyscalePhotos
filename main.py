@@ -78,3 +78,16 @@ model.fit(x=Xtrain,
     y=ytrain,
     batch_size=10,
     epochs=1)
+
+#============Test the model==============
+test = X[split:]
+test = [1.0/225*x for x in test]
+test[0].shape
+
+output = model.predict(test[0][:,:,0].reshape(1, 400, 400, 1))
+output *= 128
+# Output colorizations
+cur = np.zeros((400, 400, 3))
+cur[:,:,0] = test[0][:,:,0]
+cur[:,:,1:] = output[0]
+imsave("color.png", lab2rgb(cur))
