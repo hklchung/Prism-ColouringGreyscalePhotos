@@ -1,6 +1,7 @@
 <br />
 <p align="center">
-  <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.istockphoto.com%2Fphotos%2Fprism&psig=AOvVaw0twxp2Voh4YvWEi7YSg62R&ust=1585186624928000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCPj_qcK-tOgCFQAAAAAdAAAAABAJ" height="80">
+  <a href="https://github.com/hklchung/GAN-GenerativeAdversarialNetwork">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Light_dispersion_conceptual_waves.gif/330px-Light_dispersion_conceptual_waves.gif" height="100">
   </a>
 
   <h3 align="center">Colouring Greyscale Photos</h3>
