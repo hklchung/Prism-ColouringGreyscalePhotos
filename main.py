@@ -2,7 +2,7 @@ from keras.layers import Conv2D, Conv2DTranspose, UpSampling2D
 from keras.layers import Activation, Dense, Dropout, Flatten, InputLayer
 from keras.layers.normalization import BatchNormalization
 from keras.callbacks import TensorBoard
-from keras.models import Sequential
+from keras.models import Sequential, load_model
 from keras.preprocessing.image import ImageDataGenerator, array_to_img, img_to_array, load_img
 from skimage.color import rgb2lab, lab2rgb, rgb2gray
 from skimage.io import imsave
@@ -11,6 +11,10 @@ import os
 from PIL import Image, ImageOps
 import random
 import tensorflow as tf
+
+#=============Have GPU?==================
+from tensorflow.python.client import device_lib
+print(device_lib.list_local_devices())
 
 #==============View images===============
 %pylab inline
@@ -63,30 +67,34 @@ Y = [rgb2lab(1.0/255*x)[:,:,1:] for x in images]
 Y = [x/128 for x in Y]
 X = [x.reshape(400, 400, 1) for x in X]
 Y = [x.reshape(400, 400, 2) for x in Y]
+X = np.array(X)
+Y = np.array(Y)
 
 #==============Set up model==============
 model = Sequential()
 model.add(InputLayer(input_shape=(400, 400, 1)))
-model.add(Conv2D(8, (3, 3), activation='relu', padding='same', strides=2))
-model.add(Conv2D(8, (3, 3), activation='relu', padding='same'))
-model.add(Conv2D(16, (3, 3), activation='relu', padding='same'))
-model.add(Conv2D(16, (3, 3), activation='relu', padding='same', strides=2))
 model.add(Conv2D(32, (3, 3), activation='relu', padding='same'))
 model.add(Conv2D(32, (3, 3), activation='relu', padding='same', strides=2))
+model.add(Conv2D(64, (3, 3), activation='relu', padding='same'))
+model.add(Conv2D(64, (3, 3), activation='relu', padding='same', strides=2))
+model.add(Conv2D(128, (3, 3), activation='relu', padding='same'))
+model.add(Conv2D(128, (3, 3), activation='relu', padding='same', strides=2))
+model.add(Conv2D(256, (3, 3), activation='relu', padding='same'))
+model.add(Conv2D(128, (3, 3), activation='relu', padding='same'))
+model.add(Conv2D(64, (3, 3), activation='relu', padding='same'))
 model.add(UpSampling2D((2, 2)))
 model.add(Conv2D(32, (3, 3), activation='relu', padding='same'))
 model.add(UpSampling2D((2, 2)))
 model.add(Conv2D(16, (3, 3), activation='relu', padding='same'))
-model.add(UpSampling2D((2, 2)))
 model.add(Conv2D(2, (3, 3), activation='tanh', padding='same'))
-
-model.compile(optimizer='rmsprop',loss='mse')
+model.add(UpSampling2D((2, 2)))
+model.compile(optimizer='rmsprop', loss='mse')
 
 #=============Train model===============
 model.fit(x=X, 
     y=Y,
-    batch_size=10,
-    epochs=10)
+    batch_size=8,
+    epochs=1000)
 
 #============Test the model==============
 #test = X[split:]
