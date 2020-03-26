@@ -90,6 +90,8 @@ model.add(Conv2D(2, (3, 3), activation='tanh', padding='same'))
 model.add(UpSampling2D((2, 2)))
 model.compile(optimizer='rmsprop', loss='mse')
 
+#model = load_model('model.h5')
+
 #=============Train model===============
 model.fit(x=X, 
     y=Y,

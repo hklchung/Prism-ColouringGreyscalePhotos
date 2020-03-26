@@ -16,9 +16,9 @@ Convolutional Neural Networks (CNN) are commonly used for computer vision. In th
 * Keras
 * Scikit-Image
 * PIL
-* Tensorflow
+* Tensorflow-gpu
 * Matplotlib
 
 ## Known issues
-n/a
+* If you have previously installed tensorflow-gpu with pip, tensorflow may be unable to detect your GPU. To overcome this issue, first uninstall tensorflow-gpu, then reinstall with conda.
 
