@@ -110,9 +110,9 @@ imsave("img_gray_version.png", rgb2gray(lab2rgb(cur)))
 
 #============Save model=================
 model_json = model.to_json()
-with open("model.json", "w") as json_file:
+with open("model_v2.json", "w") as json_file:
     json_file.write(model_json)
-model.save_weights("model.h5")
+model.save_weights("model_v2.h5")
 
 #===========Resize test image============
 for filename in os.listdir('Image/Test'):
