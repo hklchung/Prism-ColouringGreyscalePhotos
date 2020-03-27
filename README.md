@@ -10,7 +10,7 @@
 </p>
 
 ## About the Project
-Convolutional Neural Networks (CNN) are commonly used for computer vision. In this project, I built a CNN that can turn black and white (greyscale) images into coloured images. Results from after 100 epochs of training are displayed below.
+Convolutional Neural Networks (CNN) are commonly used for computer vision. In this project, I built a CNN that can turn black and white (greyscale) images into coloured images. Results from after 500 epochs of training are displayed below.
 
 ### Nature
 Original Image (B&W)       |  Prism Effect (Colourised)
@@ -29,7 +29,7 @@ Prism will take images of any size, rescale and padded (with zeros) to 400x400 a
 - from green (−) to red (+);
 - and from blue (−) to yellow (+).
 
-A training set of 1,187 images, taken from my personal photo album consisting of outdoor, indoor, people at close up and various inanimate objects were used to train the CNN model. The images displayed above belong to a test set of 8 greyscale images scraped from various online sources and the colours were given by the final model after training 100 epochs.
+A training set of 1,187 images, taken from my personal photo album consisting of outdoor, indoor, people at close up and various inanimate objects were used to train the CNN model. The images displayed above belong to a test set of 8 greyscale images scraped from various online sources and the colours were given by the final model after training 500 epochs.
 
 ## Dependencies
 * Keras
