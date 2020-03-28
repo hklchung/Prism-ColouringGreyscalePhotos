@@ -9,6 +9,20 @@
   </p>
 </p>
 
+<!-- TABLE OF CONTENTS -->
+## Table of Contents
+
+* [About the Project](#about-the-project)
+* [Getting Started](#getting-started)
+  * [Prerequisites](#prerequisites)
+  * [Installation](#installation)
+* [Usage](#usage)
+* [Contributing](#contributing)
+* [Contact](#contact)
+* [Known Issues](#known-issues)
+
+<!-- ABOUT THE PROJECT -->
+
 ## About the Project
 Convolutional Neural Networks (CNN) are commonly used for computer vision. In this project, I built a CNN that can turn black and white (greyscale) images into coloured images. Results from after 500 epochs of training are displayed below.
 
@@ -31,14 +45,65 @@ Prism will take images of any size, rescale and padded (with zeros) to 400x400 a
 
 A training set of 1,187 images, taken from my personal photo album consisting of outdoor, indoor, people at close up and various inanimate objects were used to train the CNN model. The images displayed above belong to a test set of 8 greyscale images scraped from various online sources and the colours were given by the final model after training 500 epochs.
 
-## Dependencies
-* Keras
-* Scikit-Image
-* PIL
-* Tensorflow-gpu
-* Matplotlib
+Please note that this is the model that is made available in the current release and Prism uses this model by default to colourise user photos.
 
-## Known issues
+<!-- GETTING STARTED -->
+
+## Getting Started
+Hope you are now excited with testing out Prism on your machine. To get started, please follow the below guidelines on prerequisites and installation.
+
+<!-- PREREQUISITES -->
+
+### Prerequisites
+* Keras==2.3.1
+* Scikit-Image==0.15.0
+* PIL==6.2.0
+* Tensorflow-gpu==2.1.0
+* Numpy==1.18.2
+
+<!-- INSTALLATION -->
+
+### Installation
+1. Fork and star this repo ;)
+2. Create a folder on your machine for your project
+2. Inside the folder right-click and select Git Bash Here
+3. Git clone this repo into the folder by running the below command
+```sh
+git clone https://github.com/hklchung/Prism-ColouringGreyscalePhotos.git
+```
+4. Go inside the folder Prism and create the below folders as displayed    
+<pre>
+   L Prism
+      L Image
+         L Train
+         L Test
+      L Model
+      L Result
+</pre>
+- Image folder contains the Train and Test folders
+  - Train folder contains all images used for training a model (not required if you are not training a model)
+  - Test folder contains all images that you would like to colourise
+- Model folder stores all user trained models
+- Result folder stores all colourised images
+
+<!-- USAGE -->
+
+## Usage
+
+
+<!-- CONTRIBUTING -->
+
+## Contributing
+I welcome anyone to contribute to this project so if you are interested, feel free to add your code.
+
+<!-- CONTACT -->
+
+## Contact
+* [Leslie Chung](https://github.com/hklchung)
+
+<!-- KNOWN ISSUES -->
+
+## Known Issues
 * Training may take a very long time if you do not have a GPU available
 * If you have previously installed tensorflow-gpu with pip, tensorflow may be unable to detect your GPU. To overcome this issue, first uninstall tensorflow-gpu, then reinstall with conda.
 
