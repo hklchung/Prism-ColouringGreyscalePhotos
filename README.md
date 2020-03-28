@@ -134,7 +134,7 @@ Alternatively you can run Prism through Bash
 1. Give permission to execute the scripts
 ```sh
 chmod 755 Prism.py
-chhmod755 main.py
+chmod 755 main.py
 ```
 2. Execute main.py
 ```sh
