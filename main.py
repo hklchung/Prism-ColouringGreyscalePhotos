@@ -2,7 +2,7 @@
 from Prism import *
 
 def main():
-    prism = Prism()
+    Prism()
     
 if __name__ == '__main__':
     main()

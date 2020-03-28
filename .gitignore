@@ -1,0 +1,10 @@
+/Image/Train/*.jpg
+/Image/Train/*.jpeg
+/Image/Train/*.png
+/Image/Train/Resized/*.jpg
+/Image/Train/Resized/*.jpeg
+/Image/Test/Resized/*.jpg
+/Model/*.h5
+/Model/*.JSON
+wip.py
+__pycache__/
