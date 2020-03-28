@@ -108,8 +108,26 @@ git clone https://github.com/hklchung/Prism-ColouringGreyscalePhotos.git
 <!-- USAGE -->
 
 ## Usage
-
-
+In this short tutorial, I will walk you through how you can get Prism to work on Spyder
+1. Import Prism package and run Prism
+```python3
+from Prism import *
+Prism()
+```
+2. There is a 'Train' mode and a 'Test' mode
+3. Continue reading if you are only interested in colourising greyscale photos/images, otherwise skip to step 4
+  - First go to Image/Test folder and place ~10 greyscale images that you would like to colourise
+  - Alternatively you can stick with the ones that are provided with this package
+  - Will you be training a model today? [y/n]: enter n
+  - Please select your desired output dimensions: I recommend 400 x 400, enter 2
+  - Do you wish to use the Prism pre-trained model? [y/n]: enter y
+  - When the program stops, you will see the colourised photos/images in the Result folder
+4. For training, follow the below steps
+  - Will you be training a model today? [y/n]: enter y
+  - How many epochs will your model train? [enter int between 1-1000]: I recommend picking 1 for the first run
+  - Please select your desired output dimensions: I recommend 400 x 400, enter 2
+  - When the program stops, you will see your model weights saved in the Model folder
+  
 <!-- CONTRIBUTING -->
 
 ## Contributing
