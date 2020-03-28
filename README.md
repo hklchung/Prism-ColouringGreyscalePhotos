@@ -1,3 +1,8 @@
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
+
 <br />
 <p align="center">
   <a href="https://github.com/hklchung/GAN-GenerativeAdversarialNetwork">
@@ -6,6 +11,20 @@
 
   <h3 align="center">Colouring Greyscale Photos</h3>
 
+  </p>
+</p>
+
+<p align="center">
+  Prism - Using convolutional neural network to colourise greyscale photos.
+    <br />
+    <a href="https://github.com/hklchung/TravelPlanner"><strong>Explore the docs »</strong></a>
+    <br />
+    <br />
+    <a href="https://github.com/hklchung/TravelPlanner">View Demo</a>
+    ·
+    <a href="https://github.com/hklchung/TravelPlanner/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/hklchung/TravelPlanner/issues">Request Feature</a>
   </p>
 </p>
 
@@ -107,3 +126,13 @@ I welcome anyone to contribute to this project so if you are interested, feel fr
 * Training may take a very long time if you do not have a GPU available
 * If you have previously installed tensorflow-gpu with pip, tensorflow may be unable to detect your GPU. To overcome this issue, first uninstall tensorflow-gpu, then reinstall with conda.
 
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+[contributors-shield]: https://img.shields.io/github/contributors/hklchung/Prism-ColouringGreyscalePhotos.svg?style=flat-square
+[contributors-url]: https://github.com/hklchung/Prism-ColouringGreyscalePhotos/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/hklchung/Prism-ColouringGreyscalePhotos.svg?style=flat-square
+[forks-url]: https://github.com/hklchung/Prism-ColouringGreyscalePhotos/network/members
+[stars-shield]: https://img.shields.io/github/stars/hklchung/Prism-ColouringGreyscalePhotos.svg?style=flat-square
+[stars-url]: https://github.com/hklchung/Prism-ColouringGreyscalePhotos/stargazers
+[issues-shield]: https://img.shields.io/github/issues/hklchung/Prism-ColouringGreyscalePhotos.svg?style=flat-square
+[issues-url]: https://github.com/hklchung/Prism-ColouringGreyscalePhotos/issues
