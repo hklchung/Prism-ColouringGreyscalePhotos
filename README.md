@@ -64,7 +64,10 @@ Prism will take images of any size, rescale and padded (with zeros) to 400x400 a
 
 A training set of 1,187 images, taken from my personal photo album consisting of outdoor, indoor, people at close up and various inanimate objects were used to train the CNN model. The images displayed above belong to a test set of 8 greyscale images scraped from various online sources and the colours were given by the final model after training 500 epochs.
 
-Please note that this is the model that is made available in the current release and Prism uses this model by default to colourise user photos.
+Please note that this is the model that is made available in the current release and Prism uses this model by default to colourise user photos. The architecture of the model is given below.
+<p align="center">
+  <img src="https://github.com/hklchung/Prism-ColouringGreyscalePhotos/blob/master/prism_cnn.png?raw=true" height="900">
+</p>
 
 <!-- GETTING STARTED -->
 
