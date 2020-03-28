@@ -108,6 +108,7 @@ git clone https://github.com/hklchung/Prism-ColouringGreyscalePhotos.git
 <!-- USAGE -->
 
 ## Usage
+### Spyder
 In this short tutorial, I will walk you through how you can get Prism to work on Spyder
 1. Import Prism package and run Prism
 ```python3
@@ -127,6 +128,19 @@ Prism()
   - How many epochs will your model train? [enter int between 1-1000]: I recommend picking 1 for the first run
   - Please select your desired output dimensions: I recommend 400 x 400, enter 2
   - When the program stops, you will see your model weights saved in the Model folder
+
+### Bash
+Alternatively you can run Prism through Bash
+1. Give permission to execute the scripts
+```sh
+chmod 755 Prism.py
+chhmod755 main.py
+```
+2. Execute main.py
+```sh
+python3 main.py
+```
+3. All the subsequent steps are as per above outlined in the Spyder instructions
   
 <!-- CONTRIBUTING -->
 
@@ -143,6 +157,7 @@ I welcome anyone to contribute to this project so if you are interested, feel fr
 ## Known Issues
 * Training may take a very long time if you do not have a GPU available
 * If you have previously installed tensorflow-gpu with pip, tensorflow may be unable to detect your GPU. To overcome this issue, first uninstall tensorflow-gpu, then reinstall with conda.
+* If you are running Prism via Terminal (or Bash) you may encounter this error "Failed to get convolution algorithm. This is probably because cuDNN failed to initialize, so try looking to see if a warning log message was printed above." If this happens, you can uninstall the cuDNN and the CUDA that was installed by Conda.
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
