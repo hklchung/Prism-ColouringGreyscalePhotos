@@ -34,16 +34,17 @@ from keras.layers.normalization import BatchNormalization
 from keras.callbacks import TensorBoard
 from keras.models import Sequential, load_model
 from keras.preprocessing.image import ImageDataGenerator, array_to_img, img_to_array, load_img
+import tensorflow as tf
+from tensorflow.python.client import device_lib
 from skimage.color import rgb2lab, lab2rgb, rgb2gray
 from skimage.io import imsave
+from PIL import Image, ImageOps
 import numpy as np
 import os
 import pathlib
-from PIL import Image, ImageOps
 import random
 from datetime import datetime
-import tensorflow as tf
-from tensorflow.python.client import device_lib
+from tqdm import tqdm
 
 class Prism:
     def __init__(self):
@@ -203,7 +204,7 @@ class Prism:
         if not os.path.exists(resize_folder):
             os.mkdir(resize_folder)
         files = [x for x in os.listdir(path) if os.path.isfile(os.path.join(path, x))]
-        for filename in files:
+        for filename in tqdm(files):
             temp = Image.open(path + "\\" + filename)
             size = self.dims, self.dims
             temp.thumbnail(size, Image.ANTIALIAS)
@@ -213,7 +214,7 @@ class Prism:
         path = path + "\\Resized"
         images = []
         files = [x for x in os.listdir(path) if os.path.isfile(os.path.join(path, x))]
-        for filename in files:
+        for filename in tqdm(files):
             temp = np.array(img_to_array(load_img(path + "\\" + filename)), dtype=float)
             hor = self.dims - temp.shape[0]
             ver = self.dims - temp.shape[1]
@@ -275,7 +276,7 @@ class Prism:
         model.save_weights(model_pwd + "\\model_{}.h5".format(str(datetime.date(datetime.now()))))
         
     def colourise(self, model, X, pwd):
-        for i in range(0,len(X)):
+        for i in tqdm(range(0,len(X))):
             output = model.predict(X[i].reshape(1,self.dims,self.dims,1))
             output *= 128
             # Output colorizations

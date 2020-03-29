@@ -4,6 +4,7 @@
 /Image/Train/Resized/*.jpg
 /Image/Train/Resized/*.jpeg
 /Image/Test/Resized/*.jpg
+/Image/Train/Old
 /Model/*.h5
 /Model/*.JSON
 wip.py
