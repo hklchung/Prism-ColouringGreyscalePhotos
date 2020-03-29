@@ -155,6 +155,7 @@ python3 main.py
 
 ## Contributing
 I welcome anyone to contribute to this project so if you are interested, feel free to add your code.
+Alternatively, if you are not a programmer but would still like to contribute to this project, please click on the request feature button at the top of the page and provide your valuable feedback.
 
 <!-- CONTACT -->
 
