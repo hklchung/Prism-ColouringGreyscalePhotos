@@ -3,6 +3,12 @@
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 
+![Python 3.6](https://img.shields.io/badge/python-3.6-green.svg?style=plastic)
+![Keras 2.3.1](https://img.shields.io/badge/keras-2.3.1-green.svg?style=plastic)
+![TensorFlow-GPU 2.1.0](https://img.shields.io/badge/tensorflow_gpu-2.1.0-green.svg?style=plastic)
+![Scikit Image 0.15.0](https://img.shields.io/badge/scikit_image-0.15.0-green.svg?style=plastic)
+![License MIT](https://img.shields.io/badge/license-MIT-green.svg?style=plastic)
+
 <br />
 <p align="center">
   <a href="https://github.com/hklchung/GAN-GenerativeAdversarialNetwork">
