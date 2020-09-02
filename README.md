@@ -23,14 +23,14 @@
 <p align="center">
   Prism - Using convolutional neural network to colourise greyscale photos.
     <br />
-    <a href="https://github.com/hklchung/TravelPlanner"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/hklchung/Prism-ColouringGreyscalePhotos"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/hklchung/TravelPlanner">View Demo</a>
+    <a href="https://github.com/hklchung/Prism-ColouringGreyscalePhotos">View Demo</a>
     ·
-    <a href="https://github.com/hklchung/TravelPlanner/issues">Report Bug</a>
+    <a href="https://github.com/hklchung/Prism-ColouringGreyscalePhotos/issues">Report Bug</a>
     ·
-    <a href="https://github.com/hklchung/TravelPlanner/issues">Request Feature</a>
+    <a href="https://github.com/hklchung/Prism-ColouringGreyscalePhotos/issues">Request Feature</a>
   </p>
 </p>
 
