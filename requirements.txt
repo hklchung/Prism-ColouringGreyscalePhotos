@@ -2,4 +2,4 @@ keras==2.3.1
 numpy==1.18.2
 skimage==0.15.0
 PIL==6.2.0
-tensorflow==2.1.0
+tensorflow==2.7.2
